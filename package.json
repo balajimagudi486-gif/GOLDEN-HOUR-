@@ -4,7 +4,7 @@
   "private": true,
   "description": "GoldenHour - Emergency Ambulance Dispatch & Hospital Pre-Arrival Platform",
   "scripts": {
-    "build": "npm run build --prefix client",
+    "build": "node build.js",
     "install:all": "pip install -r server/requirements.txt && cd client && npm install",
     "server": "cd server && python -m uvicorn main:app --host 0.0.0.0 --port 4000",
     "client": "cd client && npm run dev",
